@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Page</title>
+    <style>
+        body {
+            background-color: #24292e;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #444c56;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .box {
+            background-color: #444c56;
+            border-radius: 5px;
+            padding: 20px;
+            min-height: 50px;
+        }
+        .box.wide {
+            flex: 1;
+        }
+        .box.small {
+            flex: 0 0 48%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="logo">
+    <h1>GitHub</h1>
+</header>
+
+<div class="search-bar">
+    <input type="text" placeholder="Search...">
+</div>
+
+<div class="container">
+    <div class="box wide">Home</div>
+    <div class="container">
+        <div class="box small">Repository</div>
+        <div class="box small">Projects</div>
+    </div>
+    <div class="box wide">Comments</div>
+</div>
+
+</body>
+</html>
